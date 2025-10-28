@@ -6,6 +6,7 @@ import { TrustSection } from "@/components/trust-section"
 import { Footer } from "@/components/footer"
 import { SnowEffect } from "@/components/snow-effect"
 import { FunFactsSection } from "@/components/fun-facts-section"
+import { ContractAddress } from "@/components/contract-address"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutSection />
       <FunFactsSection />
       <PriceSection />
+      <ContractAddress />
       <TrustSection />
       <Footer />
     </main>
