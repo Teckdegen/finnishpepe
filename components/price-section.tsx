@@ -1,12 +1,11 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { TrendingUp, TrendingDown, DollarSign, BarChart3, Activity } from "lucide-react"
+import { DollarSign, BarChart3, Activity } from "lucide-react"
 
 interface TokenData {
   price: string
   fdv: string
-  change24h: string
   volume24h: string
 }
 
@@ -28,7 +27,6 @@ export function PriceSection() {
           price: data.data?.attributes?.price_usd || "0",
           fdv: data.data?.attributes?.fdv_usd || "0",
           volume24h: data.data?.attributes?.volume_usd?.h24 || "0",
-          change24h: priceChangeData?.h24 || priceChangeData?.["24h"] || "0",
         })
         setLoading(false)
       } catch (error) {
@@ -66,7 +64,7 @@ export function PriceSection() {
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
               {/* Price */}
               <div className="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 animate-float-slowest">
                 <div className="flex items-center gap-2 text-muted-foreground text-sm font-medium">
@@ -97,27 +95,6 @@ export function PriceSection() {
                 </div>
                 <p className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-purple-400 to-pink-400">
                   {tokenData ? formatNumber(tokenData.volume24h) : "N/A"}
-                </p>
-              </div>
-
-              {/* 24h Change */}
-              <div className="flex flex-col items-center gap-2 transition-transform duration-300 hover:scale-110 animate-float-slowest">
-                <div className="flex items-center gap-2 text-muted-foreground text-sm font-medium">
-                  {tokenData && Number.parseFloat(tokenData.change24h) >= 0 ? (
-                    <TrendingUp className="w-4 h-4" />
-                  ) : (
-                    <TrendingDown className="w-4 h-4" />
-                  )}
-                  <span>24h Change</span>
-                </div>
-                <p
-                  className={`text-2xl md:text-3xl font-bold transition-colors duration-300 ${
-                    tokenData && Number.parseFloat(tokenData.change24h) >= 0 ? "text-green-400" : "text-red-400"
-                  }`}
-                >
-                  {tokenData
-                    ? `${Number.parseFloat(tokenData.change24h) >= 0 ? "+" : ""}${Number.parseFloat(tokenData.change24h).toFixed(2)}%`
-                    : "N/A"}
                 </p>
               </div>
             </div>
