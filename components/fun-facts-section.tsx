@@ -14,38 +14,38 @@ export function FunFactsSection() {
   return (
     <section className="py-24 px-4 relative">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-gradient-to-br from-amber-300 via-yellow-400 to-amber-500 rounded-2xl p-8 md:p-12 shadow-2xl border-4 border-amber-600/30 relative overflow-hidden">
-          {/* Decorative elements for the whiteboard with gold accents */}
-          <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-amber-100 border-2 border-amber-300"></div>
-          <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-amber-100 border-2 border-amber-300"></div>
-          <div className="absolute bottom-4 left-4 w-8 h-8 rounded-full bg-amber-100 border-2 border-amber-300"></div>
-          <div className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-amber-100 border-2 border-amber-300"></div>
+        <div className="bg-gradient-to-br from-blue-800 via-blue-900 to-blue-950 rounded-2xl p-8 md:p-12 shadow-2xl border-4 border-blue-700/30 relative overflow-hidden">
+          {/* Decorative elements for the whiteboard with blue accents */}
+          <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-blue-100 border-2 border-blue-300"></div>
+          <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-blue-100 border-2 border-blue-300"></div>
+          <div className="absolute bottom-4 left-4 w-8 h-8 rounded-full bg-blue-100 border-2 border-blue-300"></div>
+          <div className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-blue-100 border-2 border-blue-300"></div>
           
-          {/* Gold border accents */}
-          <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-amber-200 via-amber-400 to-amber-200"></div>
-          <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-amber-200 via-amber-400 to-amber-200"></div>
-          <div className="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-b from-amber-200 via-amber-400 to-amber-200"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-2 bg-gradient-to-b from-amber-200 via-amber-400 to-amber-200"></div>
+          {/* Blue border accents */}
+          <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-b from-blue-200 via-blue-400 to-blue-200"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-2 bg-gradient-to-b from-blue-200 via-blue-400 to-blue-200"></div>
           
           <div className="text-center mb-10 relative z-10">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-green-800 text-balance drop-shadow-sm">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-100 text-balance drop-shadow-sm">
               Finnish Fun Facts
             </h2>
-            <div className="mt-4 w-32 h-1 bg-gradient-to-r from-amber-300 via-amber-500 to-amber-300 mx-auto rounded-full"></div>
+            <div className="mt-4 w-32 h-1 bg-gradient-to-r from-blue-300 via-blue-500 to-blue-300 mx-auto rounded-full"></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {facts.map((fact, index) => (
               <div 
                 key={index}
-                className="bg-white backdrop-blur-sm rounded-lg p-5 shadow-lg border-2 border-amber-200 transform -rotate-1 hover:rotate-0 transition-all duration-300 relative hover:shadow-xl hover:scale-105"
+                className="bg-white backdrop-blur-sm rounded-lg p-5 shadow-lg border-2 border-blue-200 transform -rotate-1 hover:rotate-0 transition-all duration-300 relative hover:shadow-xl hover:scale-105"
               >
-                {/* Gold push pin effect */}
-                <div className="absolute -top-3 -right-3 w-6 h-6 bg-gradient-to-br from-amber-300 to-amber-500 rounded-full shadow-md border-2 border-amber-700"></div>
+                {/* Blue push pin effect */}
+                <div className="absolute -top-3 -right-3 w-6 h-6 bg-gradient-to-br from-blue-300 to-blue-500 rounded-full shadow-md border-2 border-blue-700"></div>
                 
                 <div className="flex items-start gap-3">
-                  <StickyNote className="w-5 h-5 text-green-700 flex-shrink-0 mt-1" />
-                  <p className="text-green-900 font-medium text-sm md:text-base">
+                  <StickyNote className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
+                  <p className="text-blue-800 font-medium text-sm md:text-base">
                     {fact}
                   </p>
                 </div>

@@ -16,21 +16,21 @@ export function ContractAddress() {
   return (
     <section className="py-8 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-gradient-to-br from-amber-300 via-yellow-400 to-amber-500 rounded-2xl p-6 md:p-8 border-4 border-amber-600/30 shadow-2xl hover:shadow-amber-500/30 transition-all duration-300 hover:scale-105">
+        <div className="bg-gradient-to-br from-blue-800 via-blue-900 to-blue-950 rounded-2xl p-6 md:p-8 border-4 border-blue-700/30 shadow-2xl hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105">
           <div className="text-center space-y-4">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-green-900">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-blue-100">
               Contract Address
             </h2>
             
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 md:p-6 border-2 border-amber-200/70 shadow-lg">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 md:p-6 border-2 border-blue-200/70 shadow-lg">
               <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                <div className="font-mono text-sm md:text-base text-green-900 break-all">
+                <div className="font-mono text-sm md:text-base text-blue-900 break-all">
                   {contractAddress}
                 </div>
                 
                 <button
                   onClick={copyToClipboard}
-                  className="flex items-center gap-2 bg-gradient-to-r from-green-600 to-green-800 hover:from-green-700 hover:to-green-900 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   {copied ? (
                     <>
@@ -47,7 +47,7 @@ export function ContractAddress() {
               </div>
             </div>
             
-            <p className="text-green-800 font-medium text-sm md:text-base">
+            <p className="text-blue-800 font-medium text-sm md:text-base">
               Click the button to copy the contract address to your clipboard
             </p>
           </div>

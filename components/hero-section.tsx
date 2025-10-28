@@ -19,7 +19,7 @@ export function HeroSection() {
           <Button
             asChild
             size="lg"
-            className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white text-lg px-8 py-6 h-auto font-bold transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-orange-500/50 hover:rotate-3 rounded-xl border-2 border-amber-300/50 shadow-lg relative overflow-hidden group"
+            className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white text-lg px-8 py-6 h-auto font-bold transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/50 hover:rotate-3 rounded-xl border-2 border-blue-300/50 shadow-lg relative overflow-hidden group"
           >
             <Link
               href="https://pepuswap.com//#/swap?inputCurrency=ETH&outputCurrency=0x421402ffc649d2ba0f2655c42bcd1e7dcc6f3970"

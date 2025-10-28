@@ -7,12 +7,14 @@ import { Footer } from "@/components/footer"
 import { SnowEffect } from "@/components/snow-effect"
 import { FunFactsSection } from "@/components/fun-facts-section"
 import { ContractAddress } from "@/components/contract-address"
+import { IceSigns } from "@/components/ice-signs"
 
 export default function Home() {
   return (
     <main className="relative">
       <BackgroundSlideshow />
       <SnowEffect />
+      <IceSigns />
       <HeroSection />
       <AboutSection />
       <FunFactsSection />
