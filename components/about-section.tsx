@@ -6,7 +6,7 @@ export function AboutSection() {
       <div className="max-w-4xl mx-auto">
         <div className="bg-gradient-to-br from-card/90 via-card/95 to-card/80 backdrop-blur-md rounded-full p-12 md:p-16 border-4 border-primary/30 shadow-2xl hover:shadow-primary/30 transition-all duration-700 hover:scale-105 hover:rotate-3 animate-float-slow">
           <div className="text-center space-y-6">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary via-green-300 to-green-400 text-balance flex items-center gap-3 justify-center animate-float-slower">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-300 to-blue-400 text-balance flex items-center gap-3 justify-center animate-float-slower">
               <Sparkles className="w-10 h-10 text-primary animate-spin-slow" />
               About Finnish Pepe
             </h2>

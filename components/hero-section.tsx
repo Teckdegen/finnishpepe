@@ -7,7 +7,7 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center px-4">
       <div className="max-w-5xl mx-auto text-center space-y-8">
         <div className="space-y-4">
-          <h1 className="text-6xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-green-200 via-green-300 to-primary tracking-tight text-balance drop-shadow-2xl animate-float-slow">
+          <h1 className="text-6xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-blue-200 via-blue-300 to-primary tracking-tight text-balance drop-shadow-2xl animate-float-slow">
             Finnish Pepe
           </h1>
           <p className="text-xl md:text-3xl text-foreground font-medium italic text-balance drop-shadow-lg animate-float-slower">

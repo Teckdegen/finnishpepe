@@ -40,7 +40,7 @@ export function SnowEffect() {
             animationDelay: `${flake.delay}s`,
           }}
         >
-          <div className="w-full h-full bg-gradient-to-br from-blue-200 via-blue-300 to-blue-500 rounded-full blur-[1px] shadow-lg shadow-blue-400/50" />
+          <div className="w-full h-full bg-white rounded-full blur-[0.5px] shadow-lg shadow-white/50" />
         </div>
       ))}
     </div>

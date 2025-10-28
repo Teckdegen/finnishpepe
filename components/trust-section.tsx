@@ -9,7 +9,7 @@ export function TrustSection() {
           <div className="space-y-6">
             <div className="inline-flex items-center gap-3 text-2xl md:text-3xl font-extrabold text-card-foreground animate-float-slow">
               <Shield className="w-10 h-10 text-primary animate-pulse" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-green-300 to-green-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-300 to-blue-400">
                 50% of Developer Tokens Locked
               </span>
             </div>

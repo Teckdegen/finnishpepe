@@ -52,7 +52,7 @@ export function PriceSection() {
   return (
     <section className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-primary to-green-400 mb-8 text-center text-balance tracking-wide animate-float-slow">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-primary to-blue-400 mb-8 text-center text-balance tracking-wide animate-float-slow">
           Live Token Stats
         </h2>
 
@@ -71,7 +71,7 @@ export function PriceSection() {
                   <DollarSign className="w-4 h-4" />
                   <span>Price</span>
                 </div>
-                <p className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-primary">
+                <p className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-primary">
                   {tokenData ? formatNumber(tokenData.price) : "N/A"}
                 </p>
               </div>

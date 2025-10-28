@@ -73,7 +73,7 @@ export function BackgroundSlideshow() {
           ))}
         </div>
       ))}
-      <div className="absolute inset-0 bg-gradient-to-b from-teal-900/80 via-emerald-900/75 to-teal-950/85" />
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-900/80 via-blue-800/75 to-blue-950/85" />
     </div>
   )
 }
