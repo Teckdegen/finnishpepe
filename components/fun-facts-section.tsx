@@ -1,6 +1,7 @@
 "use client"
 
 import { StickyNote } from "lucide-react"
+import { FunFactsSnow } from "./fun-facts-snow"
 
 export function FunFactsSection() {
   const facts = [
@@ -15,6 +16,8 @@ export function FunFactsSection() {
     <section className="py-24 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="bg-gradient-to-br from-blue-800 via-blue-900 to-blue-950 rounded-2xl p-8 md:p-12 shadow-2xl border-4 border-blue-700/30 relative overflow-hidden">
+          <FunFactsSnow />
+          
           {/* Decorative elements for the whiteboard with blue accents */}
           <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-blue-100 border-2 border-blue-300"></div>
           <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-blue-100 border-2 border-blue-300"></div>
