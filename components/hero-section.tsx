@@ -19,15 +19,16 @@ export function HeroSection() {
           <Button
             asChild
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 h-auto font-bold transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-primary/50 hover:rotate-2"
+            className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white text-lg px-8 py-6 h-auto font-bold transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-orange-500/50 hover:rotate-3 rounded-xl border-2 border-amber-300/50 shadow-lg relative overflow-hidden group"
           >
             <Link
               href="https://pepuswap.com//#/swap?inputCurrency=ETH&outputCurrency=0x421402ffc649d2ba0f2655c42bcd1e7dcc6f3970"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Flame className="w-5 h-5 mr-2" />
-              Buy on PEPU Swap
+              <Flame className="w-6 h-6 mr-2 group-hover:animate-pulse" />
+              <span className="relative z-10">Buy on PEPU Swap</span>
+              <span className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </Link>
           </Button>
 
@@ -35,11 +36,12 @@ export function HeroSection() {
             asChild
             size="lg"
             variant="secondary"
-            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-8 py-6 h-auto font-bold transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-secondary/50 hover:-rotate-2"
+            className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white text-lg px-8 py-6 h-auto font-bold transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/50 hover:-rotate-3 rounded-xl border-2 border-blue-300/50 shadow-lg relative overflow-hidden group"
           >
             <Link href="https://penkmarket.pepubank.net/" target="_blank" rel="noopener noreferrer">
-              <ShoppingCart className="w-5 h-5 mr-2" />
-              Buy with PENK Market (L1)
+              <ShoppingCart className="w-6 h-6 mr-2 group-hover:animate-bounce" />
+              <span className="relative z-10">Buy with PENK Market (L1)</span>
+              <span className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </Link>
           </Button>
         </div>
