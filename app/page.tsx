@@ -4,15 +4,15 @@ import { AboutSection } from "@/components/about-section"
 import { PriceSection } from "@/components/price-section"
 import { TrustSection } from "@/components/trust-section"
 import { Footer } from "@/components/footer"
+import { SnowEffect } from "@/components/snow-effect"
 import { FunFactsSection } from "@/components/fun-facts-section"
 import { ContractAddress } from "@/components/contract-address"
-import { IceSigns } from "@/components/ice-signs"
 
 export default function Home() {
   return (
     <main className="relative">
       <BackgroundSlideshow />
-      <IceSigns />
+      <SnowEffect />
       <HeroSection />
       <AboutSection />
       <FunFactsSection />
