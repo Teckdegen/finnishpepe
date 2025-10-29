@@ -47,7 +47,7 @@ export function ContractAddress() {
               </div>
             </div>
             
-            <p className="text-blue-800 font-medium text-sm md:text-base">
+            <p className="text-green-500 font-medium text-sm md:text-base">
               Click the button to copy the contract address to your clipboard
             </p>
           </div>
